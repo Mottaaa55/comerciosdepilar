@@ -4,42 +4,48 @@ import { useEffect, useState } from "react";
 
 const SLIDES = [
   {
+    theme: "parking",
     title: "Estacionamiento libre y gratuito",
     text: "Martes, jueves y sábados a partir de las 13 hs.",
   },
   {
-    title: "Medios de pago y promociones",
-    text: "En el centro de Pilar hay muchos. Por ejemplo, descuentos con Cuenta DNI en varios locales.",
+    theme: "dni",
+    title: "Descuentos con Cuenta DNI",
+    text: "En el centro de Pilar hay muchos medios de pago y promociones. En varios locales, descuentos con Cuenta DNI.",
+    image: "/promos/cuenta-dni.png",
+    imageAlt: "Cuenta DNI",
   },
   {
+    theme: "amex",
     title: "3 y 6 cuotas con American Express",
     text: "Todos los días, en locales adheridos.",
+    image: "/promos/amex.png",
+    imageAlt: "American Express",
   },
   {
+    theme: "bbva",
     title: "3 cuotas sin interés BBVA",
     text: "Rubros y días determinados, en locales adheridos.",
+    image: "/promos/bbva.svg",
+    imageAlt: "BBVA",
   },
 ];
 
 export default function PromoCarousel() {
   const [index, setIndex] = useState(0);
-  const [paused, setPaused] = useState(false);
 
   useEffect(() => {
-    if (paused) return;
     const id = window.setInterval(() => {
       setIndex((i) => (i + 1) % SLIDES.length);
-    }, 5000);
+    }, 4500);
     return () => window.clearInterval(id);
-  }, [paused]);
+  }, []);
 
   return (
     <aside
       className="promo-carousel"
       aria-roledescription="carrusel"
       aria-label="Publicidad y promociones del centro"
-      onMouseEnter={() => setPaused(true)}
-      onMouseLeave={() => setPaused(false)}
     >
       <div className="promo-viewport">
         <div
@@ -47,10 +53,19 @@ export default function PromoCarousel() {
           style={{ transform: `translateX(-${index * 100}%)` }}
         >
           {SLIDES.map((slide) => (
-            <div className="promo-slide" key={slide.title}>
-              <div className="promo-kicker">Publicidad</div>
-              <p className="promo-title">{slide.title}</p>
-              <p className="promo-text">{slide.text}</p>
+            <div className={`promo-slide theme-${slide.theme}`} key={slide.theme}>
+              <div className="promo-copy">
+                <div className="promo-kicker">Publicidad</div>
+                <p className="promo-title">{slide.title}</p>
+                <p className="promo-text">{slide.text}</p>
+              </div>
+              {slide.image ? (
+                <img
+                  className="promo-logo"
+                  src={slide.image}
+                  alt={slide.imageAlt ?? ""}
+                />
+              ) : null}
             </div>
           ))}
         </div>
@@ -58,7 +73,7 @@ export default function PromoCarousel() {
       <div className="promo-dots" role="tablist">
         {SLIDES.map((slide, i) => (
           <button
-            key={slide.title}
+            key={slide.theme}
             type="button"
             className={i === index ? "active" : ""}
             aria-label={slide.title}

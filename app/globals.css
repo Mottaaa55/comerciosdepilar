@@ -212,34 +212,91 @@ body {
 }
 
 .promo-viewport {
-  background: var(--terra-light);
-  border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
   position: relative;
 }
 
-.promo-viewport::before {
-  content: "";
-  position: absolute;
-  right: -36px;
-  top: -36px;
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  background: var(--terra);
-  opacity: 0.12;
-  pointer-events: none;
-}
-
 .promo-track {
   display: flex;
-  transition: transform 0.55s ease;
+  transition: transform 0.7s ease;
 }
 
 .promo-slide {
   min-width: 100%;
-  padding: 20px 28px 16px;
+  padding: 22px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 148px;
+}
+
+.promo-copy {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+}
+
+.promo-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 16px;
+}
+
+.theme-parking {
+  background: var(--terra-light);
+  color: var(--ink);
+}
+
+.theme-parking .promo-kicker {
+  color: var(--terra);
+}
+
+.theme-parking .promo-text {
+  color: var(--ink-soft);
+}
+
+.theme-dni {
+  background: #1b8a45;
+  color: #f4fff7;
+}
+
+.theme-dni .promo-kicker,
+.theme-dni .promo-text {
+  color: rgba(244, 255, 247, 0.82);
+}
+
+.theme-amex {
+  background: #1e7fd4;
+  color: #fff;
+}
+
+.theme-amex .promo-kicker,
+.theme-amex .promo-text {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.theme-amex .promo-logo {
+  background: #1e7fd4;
+}
+
+.theme-bbva {
+  background: #004481;
+  color: #fff;
+}
+
+.theme-bbva .promo-logo {
+  width: 160px;
+  height: 72px;
+  border-radius: 0;
+}
+
+.theme-bbva .promo-kicker,
+.theme-bbva .promo-text {
+  color: rgba(255, 255, 255, 0.82);
 }
 
 .promo-kicker {
@@ -247,7 +304,6 @@ body {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--terra);
   margin-bottom: 6px;
 }
 
@@ -255,12 +311,10 @@ body {
   font-family: var(--font-serif);
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--ink);
 }
 
 .promo-text {
   margin-top: 4px;
-  color: var(--ink-soft);
   font-size: 0.95rem;
 }
 

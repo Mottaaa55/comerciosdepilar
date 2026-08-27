@@ -7,6 +7,8 @@ const SLIDES = [
     theme: "parking",
     title: "Estacionamiento libre y gratuito",
     text: "Martes, jueves y sábados a partir de las 13 hs.",
+    image: "/promos/estacionamiento.png",
+    imageAlt: "Municipalidad de Pilar",
   },
   {
     theme: "dni",

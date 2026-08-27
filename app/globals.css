@@ -247,16 +247,20 @@ body {
 }
 
 .theme-parking {
-  background: var(--terra-light);
+  background: #ffffff;
   color: var(--ink);
 }
 
 .theme-parking .promo-kicker {
-  color: var(--terra);
+  color: #1a6db8;
 }
 
 .theme-parking .promo-text {
   color: var(--ink-soft);
+}
+
+.theme-parking .promo-logo {
+  background: #ffffff;
 }
 
 .theme-dni {

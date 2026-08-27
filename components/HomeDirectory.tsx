@@ -7,7 +7,7 @@ import PromoCarousel from "./PromoCarousel";
 import { SearchIcon, WhatsAppIcon } from "./icons";
 
 const REGISTER_WA =
-  "https://wa.me/5491100000000?text=" +
+  "https://wa.me/5491159949166?text=" +
   encodeURIComponent(
     "Hola! Quiero publicar mi comercio en la guía de Comercios de Pilar 🏪",
   );

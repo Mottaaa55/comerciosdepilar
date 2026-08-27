@@ -15,10 +15,10 @@ export type Comercio = {
 
 export const CATEGORIES = [
   { id: "todos", label: "Todos", icon: "🏪" },
-  { id: "Indumentaria", label: "Indumentaria", icon: "👗" },
-  { id: "Ferretería", label: "Ferretería", icon: "🔧" },
-  { id: "Dietética", label: "Dietética", icon: "🌿" },
   { id: "Bazar", label: "Bazar", icon: "🏠" },
+  { id: "Dietética", label: "Dietética", icon: "🌿" },
+  { id: "Ferretería", label: "Ferretería", icon: "🔧" },
+  { id: "Indumentaria", label: "Indumentaria", icon: "👗" },
   { id: "Lencería", label: "Lencería", icon: "🛍️" },
   { id: "Perfumería", label: "Perfumería", icon: "🌸" },
 ] as const;

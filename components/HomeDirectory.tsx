@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { CATEGORIES, COMERCIOS } from "@/data/comercios";
 import MerchantCard from "./MerchantCard";
+import PromoCarousel from "./PromoCarousel";
 import { SearchIcon, WhatsAppIcon } from "./icons";
 
 const REGISTER_WA =
@@ -90,13 +91,7 @@ export default function HomeDirectory() {
         </div>
       </div>
 
-      <aside className="parking-ad" aria-label="Estacionamiento gratuito">
-        <div className="parking-ad-kicker">Publicidad</div>
-        <p className="parking-ad-title">Estacionamiento libre y gratuito</p>
-        <p className="parking-ad-text">
-          Martes, jueves y sábados a partir de las 13 hs.
-        </p>
-      </aside>
+      <PromoCarousel />
 
       <div className="filter-section">
         <div className="filter-label">Filtrar por categoría</div>

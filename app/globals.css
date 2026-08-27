@@ -205,50 +205,86 @@ body {
   background: var(--terra-dark);
 }
 
-.parking-ad {
+.promo-carousel {
   max-width: 1100px;
   margin: 28px auto 0;
-  padding: 18px 24px;
-  background: var(--ink);
-  color: #faf6f0;
-  border-radius: var(--radius);
-  position: relative;
-  overflow: hidden;
+  padding: 0 24px;
 }
 
-.parking-ad::before {
+.promo-viewport {
+  background: var(--terra-light);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  position: relative;
+}
+
+.promo-viewport::before {
   content: "";
   position: absolute;
-  right: -40px;
-  top: -40px;
-  width: 140px;
-  height: 140px;
+  right: -36px;
+  top: -36px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
-  background: var(--gold);
-  opacity: 0.14;
+  background: var(--terra);
+  opacity: 0.12;
+  pointer-events: none;
 }
 
-.parking-ad-kicker {
+.promo-track {
+  display: flex;
+  transition: transform 0.55s ease;
+}
+
+.promo-slide {
+  min-width: 100%;
+  padding: 20px 28px 16px;
+}
+
+.promo-kicker {
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--terra);
   margin-bottom: 6px;
 }
 
-.parking-ad-title {
+.promo-title {
   font-family: var(--font-serif);
   font-size: 1.25rem;
   font-weight: 700;
-  position: relative;
+  color: var(--ink);
 }
 
-.parking-ad-text {
+.promo-text {
   margin-top: 4px;
-  color: rgba(250, 246, 240, 0.7);
+  color: var(--ink-soft);
   font-size: 0.95rem;
-  position: relative;
+}
+
+.promo-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.promo-dots button {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 0;
+  padding: 0;
+  background: rgba(193, 90, 42, 0.28);
+  cursor: pointer;
+}
+
+.promo-dots button.active {
+  background: var(--terra);
+  width: 22px;
+  border-radius: 100px;
 }
 
 .filter-section {

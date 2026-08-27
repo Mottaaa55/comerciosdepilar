@@ -289,9 +289,10 @@ body {
 }
 
 .theme-bbva .promo-logo {
-  width: 160px;
-  height: 72px;
-  border-radius: 0;
+  width: 140px;
+  height: 88px;
+  border-radius: 12px;
+  object-fit: cover;
 }
 
 .theme-bbva .promo-kicker,

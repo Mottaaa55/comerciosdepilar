@@ -26,7 +26,7 @@ const SLIDES = [
     theme: "bbva",
     title: "3 cuotas sin interés BBVA",
     text: "Rubros y días determinados, en locales adheridos.",
-    image: "/promos/bbva.svg",
+    image: "/promos/bbva.png",
     imageAlt: "BBVA",
   },
 ];

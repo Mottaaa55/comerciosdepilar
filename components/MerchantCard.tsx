@@ -1,6 +1,12 @@
 import Image from "next/image";
 import type { Comercio } from "@/data/comercios";
-import { InstagramIcon, PhoneIcon, PinIcon, WhatsAppIcon } from "./icons";
+import {
+  GlobeIcon,
+  InstagramIcon,
+  PhoneIcon,
+  PinIcon,
+  WhatsAppIcon,
+} from "./icons";
 
 const PLACEHOLDER_WA = "549XXXXXXXXXX";
 
@@ -17,6 +23,14 @@ function telHref(phone: string) {
   if (digits.startsWith("54")) return `tel:+${digits}`;
   if (digits.startsWith("0")) digits = digits.slice(1);
   return `tel:+54${digits}`;
+}
+
+function siteLabel(url: string) {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return url;
+  }
 }
 
 export default function MerchantCard({ comercio }: { comercio: Comercio }) {
@@ -54,6 +68,17 @@ export default function MerchantCard({ comercio }: { comercio: Comercio }) {
             <InstagramIcon size={14} />@{comercio.instagram}
           </a>
         ) : null}
+        {comercio.website ? (
+          <a
+            className="card-contact"
+            href={comercio.website}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GlobeIcon />
+            {siteLabel(comercio.website)}
+          </a>
+        ) : null}
       </div>
       <div className="card-footer">
         <a
@@ -74,6 +99,17 @@ export default function MerchantCard({ comercio }: { comercio: Comercio }) {
             title={`Instagram @${comercio.instagram}`}
           >
             <InstagramIcon />
+          </a>
+        ) : null}
+        {comercio.website ? (
+          <a
+            className="btn-web"
+            href={comercio.website}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Sitio web"
+          >
+            <GlobeIcon size={18} />
           </a>
         ) : null}
         <a

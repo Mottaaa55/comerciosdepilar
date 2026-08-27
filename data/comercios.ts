@@ -9,6 +9,7 @@ export type Comercio = {
   whatsapp?: string;
   phone?: string;
   instagram?: string;
+  website?: string;
   emoji: string;
 };
 
@@ -64,6 +65,21 @@ export const COMERCIOS: Comercio[] = [
     emoji: "🛍️",
   },
   {
+    id: "bazar-el-atico",
+    name: "Bazar El Ático",
+    category: "Bazar",
+    address: "B. Rivadavia 528, Pilar",
+    description:
+      "Bazar con artículos para el hogar, decoración, vajilla, textiles y regalería. Encontrá todo lo que necesitás para tu casa.",
+    image: "/comercios/bazar-el-atico.png",
+    mapQuery: "Rivadavia 528, Pilar, Buenos Aires",
+    whatsapp: "5491166407305",
+    phone: "11 6640 7305",
+    instagram: "bazarelatico",
+    website: "https://bazarelatico.empretienda.com.ar",
+    emoji: "🏠",
+  },
+  {
     id: "geraldine",
     name: "Geraldine",
     category: "Indumentaria",
@@ -77,18 +93,18 @@ export const COMERCIOS: Comercio[] = [
     emoji: "👗",
   },
   {
-    id: "bazar-el-atico",
-    name: "Bazar El Ático",
-    category: "Bazar",
-    address: "B. Rivadavia 528, Pilar",
+    id: "ocn",
+    name: "OCN",
+    category: "Indumentaria",
+    address: "B. Rivadavia 468, Pilar",
     description:
-      "Bazar con artículos para el hogar, decoración, vajilla, textiles y regalería. Encontrá todo lo que necesitás para tu casa.",
-    image: "/comercios/bazar-el-atico.png",
-    mapQuery: "Rivadavia 528, Pilar, Buenos Aires",
-    whatsapp: "5491166407305",
-    phone: "11 6640 7305",
-    instagram: "bazarelatico",
-    emoji: "🏠",
+      "Local de indumentaria con las colecciones más actuales. Ropa de calidad para toda la familia.",
+    image: "/comercios/ocn.png",
+    mapQuery: "B. Rivadavia 468, Pilar, Buenos Aires",
+    whatsapp: "541127029960",
+    phone: "011 2702-9960",
+    instagram: "ocn.pilar",
+    emoji: "👔",
   },
   {
     id: "olivia-indumentaria",
@@ -111,21 +127,8 @@ export const COMERCIOS: Comercio[] = [
     image:
       "https://images.unsplash.com/photo-1522771930-78848d9293e8?w=600&q=80",
     mapQuery: "Pedro Lagrave 515, Pilar, Buenos Aires",
+    instagram: "habiaunavez_pilar",
     emoji: "👶",
-  },
-  {
-    id: "ocn",
-    name: "OCN",
-    category: "Indumentaria",
-    address: "B. Rivadavia 468, Pilar",
-    description:
-      "Local de indumentaria con las colecciones más actuales. Ropa de calidad para toda la familia.",
-    image: "/comercios/ocn.png",
-    mapQuery: "B. Rivadavia 468, Pilar, Buenos Aires",
-    whatsapp: "541127029960",
-    phone: "011 2702-9960",
-    instagram: "ocn.pilar",
-    emoji: "👔",
   },
   {
     id: "apasionata",

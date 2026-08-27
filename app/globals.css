@@ -413,7 +413,8 @@ body {
 }
 
 .btn-map,
-.btn-ig {
+.btn-ig,
+.btn-web {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -439,6 +440,11 @@ body {
   border-color: #e1306c;
   color: #e1306c;
   background: rgba(225, 48, 108, 0.08);
+}
+
+.btn-web:hover {
+  border-color: var(--terra);
+  color: var(--terra);
 }
 
 .register-banner {

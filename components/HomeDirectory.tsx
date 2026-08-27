@@ -27,6 +27,7 @@ export default function HomeDirectory() {
         c.description.toLowerCase().includes(q) ||
         c.category.toLowerCase().includes(q) ||
         (c.instagram ?? "").toLowerCase().includes(q.replace(/^@/, "")) ||
+        (c.website ?? "").toLowerCase().includes(q) ||
         (c.phone ?? "").replace(/\s/g, "").includes(q.replace(/\s/g, ""))
       );
     });

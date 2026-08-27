@@ -30,7 +30,7 @@ export default function HomeDirectory() {
         (c.website ?? "").toLowerCase().includes(q) ||
         (c.phone ?? "").replace(/\s/g, "").includes(q.replace(/\s/g, ""))
       );
-    });
+    }).sort((a, b) => a.name.localeCompare(b.name, "es"));
   }, [query, category]);
 
   const uniqueCategories = new Set(COMERCIOS.map((c) => c.category)).size;

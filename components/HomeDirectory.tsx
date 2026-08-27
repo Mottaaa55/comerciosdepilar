@@ -161,6 +161,32 @@ export default function HomeDirectory() {
           Las fotos son ilustrativas. Los números de WhatsApp deben actualizarse
           por cada comerciante.
         </p>
+        <a
+          className="motteis-btn"
+          href="https://motteis.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Creado por{" "}
+          <span className="motteis-mark">
+            <span className="motteis-lt">&lt;</span>
+            Motteis
+            <span className="motteis-gt">&gt;</span>
+          </span>
+          <svg
+            className="motteis-arrow"
+            width="12"
+            height="12"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2.4"
+            aria-hidden
+          >
+            <path d="M7 17 17 7" />
+            <path d="M8 7h9v9" />
+          </svg>
+        </a>
       </footer>
     </>
   );

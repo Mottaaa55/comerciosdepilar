@@ -33,6 +33,9 @@ export const COMERCIOS: Comercio[] = [
     image:
       "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&q=80",
     mapQuery: "Rivadavia 488, Pilar, Buenos Aires",
+    whatsapp: "5491149457936",
+    phone: "+54 9 11 4945-7936",
+    instagram: "esencialuniformespilar",
     emoji: "👔",
   },
   {
@@ -45,6 +48,9 @@ export const COMERCIOS: Comercio[] = [
     image:
       "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80",
     mapQuery: "Rivadavia 480, Pilar, Buenos Aires",
+    whatsapp: "5491153471339",
+    phone: "+54 9 11 5347-1339",
+    instagram: "vitalitapilar",
     emoji: "🌿",
   },
   {

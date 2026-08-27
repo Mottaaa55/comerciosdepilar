@@ -14,7 +14,7 @@ function waHref(comercio: Comercio) {
 
 function telHref(phone: string) {
   const digits = phone.replace(/\D/g, "");
-  return `tel:+54${digits}`;
+  return digits.startsWith("54") ? `tel:+${digits}` : `tel:+54${digits}`;
 }
 
 export default function MerchantCard({ comercio }: { comercio: Comercio }) {

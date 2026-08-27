@@ -31,8 +31,7 @@ export const COMERCIOS: Comercio[] = [
     address: "B. Rivadavia 488, Pilar",
     description:
       "Uniformes escolares, de trabajo y corporativos. Bordados y personalización. Atención personalizada para colegios y empresas.",
-    image:
-      "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&q=80",
+    image: "/comercios/esencial-uniformes.png",
     mapQuery: "Rivadavia 488, Pilar, Buenos Aires",
     whatsapp: "5491149457936",
     phone: "+54 9 11 4945-7936",

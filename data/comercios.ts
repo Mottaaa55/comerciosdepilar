@@ -62,6 +62,8 @@ export const COMERCIOS: Comercio[] = [
       "Lencería femenina, ropa interior y de dormir. Amplio surtido de tallas y modelos para todas las mujeres.",
     image: "/comercios/lenceria-marilo.png",
     mapQuery: "Rivadavia 500, Pilar, Buenos Aires",
+    whatsapp: "5491131974379",
+    phone: "+54 9 11 3197-4379",
     emoji: "🛍️",
   },
   {
@@ -115,6 +117,7 @@ export const COMERCIOS: Comercio[] = [
       "Ropa femenina de moda, carteras, cinturones, bijouterie y accesorios. Las últimas tendencias para lucir siempre impecable.",
     image: "/comercios/olivia.png",
     mapQuery: "B. Rivadavia 483, Pilar Centro, Buenos Aires",
+    instagram: "olivia_pilar_",
     emoji: "👗",
   },
   {

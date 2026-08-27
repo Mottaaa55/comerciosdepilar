@@ -64,6 +64,19 @@ export const COMERCIOS: Comercio[] = [
     emoji: "🛍️",
   },
   {
+    id: "geraldine",
+    name: "Geraldine",
+    category: "Indumentaria",
+    address: "B. Rivadavia 447",
+    description:
+      "Indumentaria y moda femenina. Ropa, accesorios y las últimas tendencias para la mujer moderna de Pilar.",
+    image: "/comercios/geraldine.png",
+    mapQuery: "B. Rivadavia 447, Pilar, Buenos Aires",
+    whatsapp: "541125265701",
+    phone: "011 2526-5701",
+    emoji: "👗",
+  },
+  {
     id: "bazar-el-atico",
     name: "Bazar El Ático",
     category: "Bazar",
@@ -81,12 +94,11 @@ export const COMERCIOS: Comercio[] = [
     id: "olivia-indumentaria",
     name: "Olivia Indumentaria y Accesorios",
     category: "Indumentaria",
-    address: "B. Rivadavia 483, Pilar",
+    address: "B. Rivadavia 483",
     description:
       "Ropa femenina de moda, carteras, cinturones, bijouterie y accesorios. Las últimas tendencias para lucir siempre impecable.",
-    image:
-      "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=600&q=80",
-    mapQuery: "Rivadavia 483, Pilar, Buenos Aires",
+    image: "/comercios/olivia.png",
+    mapQuery: "B. Rivadavia 483, Pilar Centro, Buenos Aires",
     emoji: "👗",
   },
   {
@@ -100,19 +112,6 @@ export const COMERCIOS: Comercio[] = [
       "https://images.unsplash.com/photo-1522771930-78848d9293e8?w=600&q=80",
     mapQuery: "Pedro Lagrave 515, Pilar, Buenos Aires",
     emoji: "👶",
-  },
-  {
-    id: "geraldine",
-    name: "Geraldine",
-    category: "Indumentaria",
-    address: "B. Rivadavia 447",
-    description:
-      "Indumentaria y moda femenina. Ropa, accesorios y las últimas tendencias para la mujer moderna de Pilar.",
-    image: "/comercios/geraldine.png",
-    mapQuery: "B. Rivadavia 447, Pilar, Buenos Aires",
-    whatsapp: "541125265701",
-    phone: "011 2526-5701",
-    emoji: "👗",
   },
   {
     id: "ocn",

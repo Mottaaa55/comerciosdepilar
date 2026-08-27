@@ -40,13 +40,6 @@ export default function HomeDirectory() {
     <>
       <header className="hero">
         <div className="hero-inner">
-          <img
-            className="hero-logo"
-            src="/logo.png"
-            alt="Comercios de Pilar"
-            width={72}
-            height={72}
-          />
           <span className="hero-badge">📍 Pilar, Buenos Aires</span>
           <h1>
             Mira todos los <em>comercios</em> que tenemos en pilar

@@ -13,8 +13,10 @@ function waHref(comercio: Comercio) {
 }
 
 function telHref(phone: string) {
-  const digits = phone.replace(/\D/g, "");
-  return digits.startsWith("54") ? `tel:+${digits}` : `tel:+54${digits}`;
+  let digits = phone.replace(/\D/g, "");
+  if (digits.startsWith("54")) return `tel:+${digits}`;
+  if (digits.startsWith("0")) digits = digits.slice(1);
+  return `tel:+54${digits}`;
 }
 
 export default function MerchantCard({ comercio }: { comercio: Comercio }) {

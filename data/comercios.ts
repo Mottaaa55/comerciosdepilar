@@ -118,12 +118,14 @@ export const COMERCIOS: Comercio[] = [
     id: "ocn",
     name: "OCN",
     category: "Indumentaria",
-    address: "Pilar, Buenos Aires",
+    address: "B. Rivadavia 468, B1629 Pilar, Provincia de Buenos Aires",
     description:
       "Local de indumentaria con las colecciones más actuales. Ropa de calidad para toda la familia.",
-    image:
-      "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=600&q=80",
-    mapQuery: "Pilar Buenos Aires",
+    image: "/comercios/ocn.png",
+    mapQuery: "B. Rivadavia 468, Pilar, Buenos Aires",
+    whatsapp: "541127029960",
+    phone: "011 2702-9960",
+    instagram: "ocn.pilar",
     emoji: "👔",
   },
   {

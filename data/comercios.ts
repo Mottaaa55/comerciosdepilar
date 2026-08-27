@@ -77,7 +77,6 @@ export const COMERCIOS: Comercio[] = [
     whatsapp: "5491166407305",
     phone: "11 6640 7305",
     instagram: "bazarelatico",
-    website: "https://bazarelatico.empretienda.com.ar",
     emoji: "🏠",
   },
   {

@@ -205,6 +205,52 @@ body {
   background: var(--terra-dark);
 }
 
+.parking-ad {
+  max-width: 1100px;
+  margin: 28px auto 0;
+  padding: 18px 24px;
+  background: var(--ink);
+  color: #faf6f0;
+  border-radius: var(--radius);
+  position: relative;
+  overflow: hidden;
+}
+
+.parking-ad::before {
+  content: "";
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: var(--gold);
+  opacity: 0.14;
+}
+
+.parking-ad-kicker {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+
+.parking-ad-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.parking-ad-text {
+  margin-top: 4px;
+  color: rgba(250, 246, 240, 0.7);
+  font-size: 0.95rem;
+  position: relative;
+}
+
 .filter-section {
   max-width: 1100px;
   margin: 40px auto 0;

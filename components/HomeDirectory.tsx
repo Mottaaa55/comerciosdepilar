@@ -90,6 +90,14 @@ export default function HomeDirectory() {
         </div>
       </div>
 
+      <aside className="parking-ad" aria-label="Estacionamiento gratuito">
+        <div className="parking-ad-kicker">Publicidad</div>
+        <p className="parking-ad-title">Estacionamiento libre y gratuito</p>
+        <p className="parking-ad-text">
+          Martes, jueves y sábados a partir de las 13 hs.
+        </p>
+      </aside>
+
       <div className="filter-section">
         <div className="filter-label">Filtrar por categoría</div>
         <div className="pills">

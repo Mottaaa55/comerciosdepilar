@@ -21,6 +21,8 @@ function waHref(comercio: Comercio) {
 function telHref(phone: string) {
   let digits = phone.replace(/\D/g, "");
   if (digits.startsWith("54")) return `tel:+${digits}`;
+  const mobile = digits.match(/^0(\d{2,4})15(\d{6,8})$/);
+  if (mobile) return `tel:+549${mobile[1]}${mobile[2]}`;
   if (digits.startsWith("0")) digits = digits.slice(1);
   return `tel:+54${digits}`;
 }

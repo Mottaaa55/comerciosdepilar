@@ -134,14 +134,16 @@ export const COMERCIOS: Comercio[] = [
   },
   {
     id: "apasionata",
-    name: "Apasionata",
+    name: "Apasionatta",
     category: "Indumentaria",
-    address: "Pilar, Buenos Aires",
+    address: "B. Rivadavia 437, Pilar",
     description:
       "Moda femenina con estilo y pasión. Vestidos, conjuntos y prendas únicas para cada ocasión especial.",
-    image:
-      "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&q=80",
-    mapQuery: "Pilar Buenos Aires",
+    image: "/comercios/apasionatta.png",
+    mapQuery: "B. Rivadavia 437, Pilar, Buenos Aires",
+    whatsapp: "5492304696979",
+    phone: "0230 15-469-6979",
+    instagram: "apasionatta_pilar",
     emoji: "💃",
   },
 ];

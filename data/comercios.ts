@@ -118,7 +118,7 @@ export const COMERCIOS: Comercio[] = [
     id: "ocn",
     name: "OCN",
     category: "Indumentaria",
-    address: "B. Rivadavia 468, B1629 Pilar, Provincia de Buenos Aires",
+    address: "B. Rivadavia 468, Pilar",
     description:
       "Local de indumentaria con las colecciones más actuales. Ropa de calidad para toda la familia.",
     image: "/comercios/ocn.png",

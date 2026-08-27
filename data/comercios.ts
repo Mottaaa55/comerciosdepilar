@@ -45,8 +45,7 @@ export const COMERCIOS: Comercio[] = [
     address: "B. Rivadavia 480, Pilar",
     description:
       "Productos naturales, integrales, sin TACC, suplementos y semillas. Todo para una alimentación saludable y equilibrada.",
-    image:
-      "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80",
+    image: "/comercios/dietetica-vitalita.png",
     mapQuery: "Rivadavia 480, Pilar, Buenos Aires",
     whatsapp: "5491153471339",
     phone: "+54 9 11 5347-1339",
@@ -103,15 +102,16 @@ export const COMERCIOS: Comercio[] = [
     emoji: "👶",
   },
   {
-    id: "geraldyn",
-    name: "Geraldyn",
+    id: "geraldine",
+    name: "Geraldine",
     category: "Indumentaria",
-    address: "Pilar, Buenos Aires",
+    address: "B. Rivadavia 447",
     description:
       "Indumentaria y moda femenina. Ropa, accesorios y las últimas tendencias para la mujer moderna de Pilar.",
-    image:
-      "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=600&q=80",
-    mapQuery: "Pilar Buenos Aires",
+    image: "/comercios/geraldine.png",
+    mapQuery: "B. Rivadavia 447, Pilar, Buenos Aires",
+    whatsapp: "541125265701",
+    phone: "011 2526-5701",
     emoji: "👗",
   },
   {

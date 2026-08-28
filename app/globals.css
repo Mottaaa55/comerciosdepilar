@@ -7,18 +7,18 @@
 }
 
 :root {
-  --terra: #c15a2a;
-  --terra-light: #f5e8df;
-  --terra-dark: #7a3418;
-  --gold: #d4a017;
-  --gold-light: #faf0d2;
+  --terra: #1a6db8;
+  --terra-light: #e7f1fa;
+  --terra-dark: #0e4d8c;
+  --gold: #ce1126;
+  --gold-light: #fde8eb;
   --verde: #2d6a4f;
   --verde-light: #d8efdf;
   --cream: #faf6f0;
   --ink: #1c1208;
   --ink-soft: #4a3728;
   --muted: #8c7b6e;
-  --border: rgba(193, 90, 42, 0.15);
+  --border: rgba(26, 109, 184, 0.18);
   --card-bg: #ffffff;
   --radius: 16px;
   --radius-sm: 8px;
@@ -336,7 +336,7 @@ body {
   border-radius: 50%;
   border: 0;
   padding: 0;
-  background: rgba(193, 90, 42, 0.28);
+  background: rgba(26, 109, 184, 0.28);
   cursor: pointer;
 }
 
